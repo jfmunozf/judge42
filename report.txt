@@ -1,0 +1,459 @@
+-------------------
+Judge42 - 1.0 - Apr 4, 2023 
+A simple programming judge writen in Python
+Author: Juan Felipe Munoz Fernandez - jfmunozf@unal.edu.co
+-------------------
+
+Fail to this case:
+3
+*** Expected output ***
+0 is less than 3 and the square of 0 is: 0
+1 is less than 3 and the square of 1 is: 1
+2 is less than 3 and the square of 2 is: 4
+*** Your output ***
+0 is less than 3and the square of 0 is: 0
+1 is less than 3and the square of 1 is: 1
+2 is less than 3and the square of 2 is: 4
+*** Differences ***
+- 0 is less than 3 and the square of 0 is: 0
+?                 -
+
++ 0 is less than 3and the square of 0 is: 0
+- 1 is less than 3 and the square of 1 is: 1
+?                 -
+
++ 1 is less than 3and the square of 1 is: 1
+- 2 is less than 3 and the square of 2 is: 4
+?                 -
+
++ 2 is less than 3and the square of 2 is: 4
+Case 1 of 5 score: 98.81422924901186 %
+
+Fail to this case:
+5
+*** Expected output ***
+0 is less than 5 and the square of 0 is: 0
+1 is less than 5 and the square of 1 is: 1
+2 is less than 5 and the square of 2 is: 4
+3 is less than 5 and the square of 3 is: 9
+4 is less than 5 and the square of 4 is: 16
+*** Your output ***
+0 is less than 5and the square of 0 is: 0
+1 is less than 5and the square of 1 is: 1
+2 is less than 5and the square of 2 is: 4
+3 is less than 5and the square of 3 is: 9
+4 is less than 5and the square of 4 is: 16
+*** Differences ***
+- 0 is less than 5 and the square of 0 is: 0
+?                 -
+
++ 0 is less than 5and the square of 0 is: 0
+- 1 is less than 5 and the square of 1 is: 1
+?                 -
+
++ 1 is less than 5and the square of 1 is: 1
+- 2 is less than 5 and the square of 2 is: 4
+?                 -
+
++ 2 is less than 5and the square of 2 is: 4
+- 3 is less than 5 and the square of 3 is: 9
+?                 -
+
++ 3 is less than 5and the square of 3 is: 9
+- 4 is less than 5 and the square of 4 is: 16
+?                 -
+
++ 4 is less than 5and the square of 4 is: 16
+Case 2 of 5 score: 98.82352941176471 %
+
+Fail to this case:
+10
+*** Expected output ***
+0 is less than 10 and the square of 0 is: 0
+1 is less than 10 and the square of 1 is: 1
+2 is less than 10 and the square of 2 is: 4
+3 is less than 10 and the square of 3 is: 9
+4 is less than 10 and the square of 4 is: 16
+5 is less than 10 and the square of 5 is: 25
+6 is less than 10 and the square of 6 is: 36
+7 is less than 10 and the square of 7 is: 49
+8 is less than 10 and the square of 8 is: 64
+9 is less than 10 and the square of 9 is: 81
+*** Your output ***
+0 is less than 10and the square of 0 is: 0
+1 is less than 10and the square of 1 is: 1
+2 is less than 10and the square of 2 is: 4
+3 is less than 10and the square of 3 is: 9
+4 is less than 10and the square of 4 is: 16
+5 is less than 10and the square of 5 is: 25
+6 is less than 10and the square of 6 is: 36
+7 is less than 10and the square of 7 is: 49
+8 is less than 10and the square of 8 is: 64
+9 is less than 10and the square of 9 is: 81
+*** Differences ***
+- 0 is less than 10 and the square of 0 is: 0
+?                  -
+
++ 0 is less than 10and the square of 0 is: 0
+- 1 is less than 10 and the square of 1 is: 1
+?                  -
+
++ 1 is less than 10and the square of 1 is: 1
+- 2 is less than 10 and the square of 2 is: 4
+?                  -
+
++ 2 is less than 10and the square of 2 is: 4
+- 3 is less than 10 and the square of 3 is: 9
+?                  -
+
++ 3 is less than 10and the square of 3 is: 9
+- 4 is less than 10 and the square of 4 is: 16
+?                  -
+
++ 4 is less than 10and the square of 4 is: 16
+- 5 is less than 10 and the square of 5 is: 25
+?                  -
+
++ 5 is less than 10and the square of 5 is: 25
+- 6 is less than 10 and the square of 6 is: 36
+?                  -
+
++ 6 is less than 10and the square of 6 is: 36
+- 7 is less than 10 and the square of 7 is: 49
+?                  -
+
++ 7 is less than 10and the square of 7 is: 49
+- 8 is less than 10 and the square of 8 is: 64
+?                  -
+
++ 8 is less than 10and the square of 8 is: 64
+- 9 is less than 10 and the square of 9 is: 81
+?                  -
+
++ 9 is less than 10and the square of 9 is: 81
+Case 3 of 5 score: 89.0909090909091 %
+
+Fail to this case:
+20
+*** Expected output ***
+0 is less than 20 and the square of 0 is: 0
+1 is less than 20 and the square of 1 is: 1
+2 is less than 20 and the square of 2 is: 4
+3 is less than 20 and the square of 3 is: 9
+4 is less than 20 and the square of 4 is: 16
+5 is less than 20 and the square of 5 is: 25
+6 is less than 20 and the square of 6 is: 36
+7 is less than 20 and the square of 7 is: 49
+8 is less than 20 and the square of 8 is: 64
+9 is less than 20 and the square of 9 is: 81
+10 is less than 20 and the square of 10 is: 100
+11 is less than 20 and the square of 11 is: 121
+12 is less than 20 and the square of 12 is: 144
+13 is less than 20 and the square of 13 is: 169
+14 is less than 20 and the square of 14 is: 196
+15 is less than 20 and the square of 15 is: 225
+16 is less than 20 and the square of 16 is: 256
+17 is less than 20 and the square of 17 is: 289
+18 is less than 20 and the square of 18 is: 324
+19 is less than 20 and the square of 19 is: 361
+*** Your output ***
+0 is less than 20and the square of 0 is: 0
+1 is less than 20and the square of 1 is: 1
+2 is less than 20and the square of 2 is: 4
+3 is less than 20and the square of 3 is: 9
+4 is less than 20and the square of 4 is: 16
+5 is less than 20and the square of 5 is: 25
+6 is less than 20and the square of 6 is: 36
+7 is less than 20and the square of 7 is: 49
+8 is less than 20and the square of 8 is: 64
+9 is less than 20and the square of 9 is: 81
+10 is less than 20and the square of 10 is: 100
+11 is less than 20and the square of 11 is: 121
+12 is less than 20and the square of 12 is: 144
+13 is less than 20and the square of 13 is: 169
+14 is less than 20and the square of 14 is: 196
+15 is less than 20and the square of 15 is: 225
+16 is less than 20and the square of 16 is: 256
+17 is less than 20and the square of 17 is: 289
+18 is less than 20and the square of 18 is: 324
+19 is less than 20and the square of 19 is: 361
+*** Differences ***
+- 0 is less than 20 and the square of 0 is: 0
+?                  -
+
++ 0 is less than 20and the square of 0 is: 0
+- 1 is less than 20 and the square of 1 is: 1
+?                  -
+
++ 1 is less than 20and the square of 1 is: 1
+- 2 is less than 20 and the square of 2 is: 4
+?                  -
+
++ 2 is less than 20and the square of 2 is: 4
+- 3 is less than 20 and the square of 3 is: 9
+?                  -
+
++ 3 is less than 20and the square of 3 is: 9
+- 4 is less than 20 and the square of 4 is: 16
+?                  -
+
++ 4 is less than 20and the square of 4 is: 16
+- 5 is less than 20 and the square of 5 is: 25
+?                  -
+
++ 5 is less than 20and the square of 5 is: 25
+- 6 is less than 20 and the square of 6 is: 36
+?                  -
+
++ 6 is less than 20and the square of 6 is: 36
+- 7 is less than 20 and the square of 7 is: 49
+?                  -
+
++ 7 is less than 20and the square of 7 is: 49
+- 8 is less than 20 and the square of 8 is: 64
+?                  -
+
++ 8 is less than 20and the square of 8 is: 64
+- 9 is less than 20 and the square of 9 is: 81
+?                  -
+
++ 9 is less than 20and the square of 9 is: 81
+- 10 is less than 20 and the square of 10 is: 100
+?                   -
+
++ 10 is less than 20and the square of 10 is: 100
+- 11 is less than 20 and the square of 11 is: 121
+?                   -
+
++ 11 is less than 20and the square of 11 is: 121
+- 12 is less than 20 and the square of 12 is: 144
+?                   -
+
++ 12 is less than 20and the square of 12 is: 144
+- 13 is less than 20 and the square of 13 is: 169
+?                   -
+
++ 13 is less than 20and the square of 13 is: 169
+- 14 is less than 20 and the square of 14 is: 196
+?                   -
+
++ 14 is less than 20and the square of 14 is: 196
+- 15 is less than 20 and the square of 15 is: 225
+?                   -
+
++ 15 is less than 20and the square of 15 is: 225
+- 16 is less than 20 and the square of 16 is: 256
+?                   -
+
++ 16 is less than 20and the square of 16 is: 256
+- 17 is less than 20 and the square of 17 is: 289
+?                   -
+
++ 17 is less than 20and the square of 17 is: 289
+- 18 is less than 20 and the square of 18 is: 324
+?                   -
+
++ 18 is less than 20and the square of 18 is: 324
+- 19 is less than 20 and the square of 19 is: 361
+?                   -
+
++ 19 is less than 20and the square of 19 is: 361
+Case 4 of 5 score: 79.23497267759562 %
+
+Fail to this case:
+30
+*** Expected output ***
+0 is less than 30 and the square of 0 is: 0
+1 is less than 30 and the square of 1 is: 1
+2 is less than 30 and the square of 2 is: 4
+3 is less than 30 and the square of 3 is: 9
+4 is less than 30 and the square of 4 is: 16
+5 is less than 30 and the square of 5 is: 25
+6 is less than 30 and the square of 6 is: 36
+7 is less than 30 and the square of 7 is: 49
+8 is less than 30 and the square of 8 is: 64
+9 is less than 30 and the square of 9 is: 81
+10 is less than 30 and the square of 10 is: 100
+11 is less than 30 and the square of 11 is: 121
+12 is less than 30 and the square of 12 is: 144
+13 is less than 30 and the square of 13 is: 169
+14 is less than 30 and the square of 14 is: 196
+15 is less than 30 and the square of 15 is: 225
+16 is less than 30 and the square of 16 is: 256
+17 is less than 30 and the square of 17 is: 289
+18 is less than 30 and the square of 18 is: 324
+19 is less than 30 and the square of 19 is: 361
+20 is less than 30 and the square of 20 is: 400
+21 is less than 30 and the square of 21 is: 441
+22 is less than 30 and the square of 22 is: 484
+23 is less than 30 and the square of 23 is: 529
+24 is less than 30 and the square of 24 is: 576
+25 is less than 30 and the square of 25 is: 625
+26 is less than 30 and the square of 26 is: 676
+27 is less than 30 and the square of 27 is: 729
+28 is less than 30 and the square of 28 is: 784
+29 is less than 30 and the square of 29 is: 841
+*** Your output ***
+0 is less than 30and the square of 0 is: 0
+1 is less than 30and the square of 1 is: 1
+2 is less than 30and the square of 2 is: 4
+3 is less than 30and the square of 3 is: 9
+4 is less than 30and the square of 4 is: 16
+5 is less than 30and the square of 5 is: 25
+6 is less than 30and the square of 6 is: 36
+7 is less than 30and the square of 7 is: 49
+8 is less than 30and the square of 8 is: 64
+9 is less than 30and the square of 9 is: 81
+10 is less than 30and the square of 10 is: 100
+11 is less than 30and the square of 11 is: 121
+12 is less than 30and the square of 12 is: 144
+13 is less than 30and the square of 13 is: 169
+14 is less than 30and the square of 14 is: 196
+15 is less than 30and the square of 15 is: 225
+16 is less than 30and the square of 16 is: 256
+17 is less than 30and the square of 17 is: 289
+18 is less than 30and the square of 18 is: 324
+19 is less than 30and the square of 19 is: 361
+20 is less than 30and the square of 20 is: 400
+21 is less than 30and the square of 21 is: 441
+22 is less than 30and the square of 22 is: 484
+23 is less than 30and the square of 23 is: 529
+24 is less than 30and the square of 24 is: 576
+25 is less than 30and the square of 25 is: 625
+26 is less than 30and the square of 26 is: 676
+27 is less than 30and the square of 27 is: 729
+28 is less than 30and the square of 28 is: 784
+29 is less than 30and the square of 29 is: 841
+*** Differences ***
+- 0 is less than 30 and the square of 0 is: 0
+?                  -
+
++ 0 is less than 30and the square of 0 is: 0
+- 1 is less than 30 and the square of 1 is: 1
+?                  -
+
++ 1 is less than 30and the square of 1 is: 1
+- 2 is less than 30 and the square of 2 is: 4
+?                  -
+
++ 2 is less than 30and the square of 2 is: 4
+- 3 is less than 30 and the square of 3 is: 9
+?                  -
+
++ 3 is less than 30and the square of 3 is: 9
+- 4 is less than 30 and the square of 4 is: 16
+?                  -
+
++ 4 is less than 30and the square of 4 is: 16
+- 5 is less than 30 and the square of 5 is: 25
+?                  -
+
++ 5 is less than 30and the square of 5 is: 25
+- 6 is less than 30 and the square of 6 is: 36
+?                  -
+
++ 6 is less than 30and the square of 6 is: 36
+- 7 is less than 30 and the square of 7 is: 49
+?                  -
+
++ 7 is less than 30and the square of 7 is: 49
+- 8 is less than 30 and the square of 8 is: 64
+?                  -
+
++ 8 is less than 30and the square of 8 is: 64
+- 9 is less than 30 and the square of 9 is: 81
+?                  -
+
++ 9 is less than 30and the square of 9 is: 81
+- 10 is less than 30 and the square of 10 is: 100
+?                   -
+
++ 10 is less than 30and the square of 10 is: 100
+- 11 is less than 30 and the square of 11 is: 121
+?                   -
+
++ 11 is less than 30and the square of 11 is: 121
+- 12 is less than 30 and the square of 12 is: 144
+?                   -
+
++ 12 is less than 30and the square of 12 is: 144
+- 13 is less than 30 and the square of 13 is: 169
+?                   -
+
++ 13 is less than 30and the square of 13 is: 169
+- 14 is less than 30 and the square of 14 is: 196
+?                   -
+
++ 14 is less than 30and the square of 14 is: 196
+- 15 is less than 30 and the square of 15 is: 225
+?                   -
+
++ 15 is less than 30and the square of 15 is: 225
+- 16 is less than 30 and the square of 16 is: 256
+?                   -
+
++ 16 is less than 30and the square of 16 is: 256
+- 17 is less than 30 and the square of 17 is: 289
+?                   -
+
++ 17 is less than 30and the square of 17 is: 289
+- 18 is less than 30 and the square of 18 is: 324
+?                   -
+
++ 18 is less than 30and the square of 18 is: 324
+- 19 is less than 30 and the square of 19 is: 361
+?                   -
+
++ 19 is less than 30and the square of 19 is: 361
+- 20 is less than 30 and the square of 20 is: 400
+?                   -
+
++ 20 is less than 30and the square of 20 is: 400
+- 21 is less than 30 and the square of 21 is: 441
+?                   -
+
++ 21 is less than 30and the square of 21 is: 441
+- 22 is less than 30 and the square of 22 is: 484
+?                   -
+
++ 22 is less than 30and the square of 22 is: 484
+- 23 is less than 30 and the square of 23 is: 529
+?                   -
+
++ 23 is less than 30and the square of 23 is: 529
+- 24 is less than 30 and the square of 24 is: 576
+?                   -
+
++ 24 is less than 30and the square of 24 is: 576
+- 25 is less than 30 and the square of 25 is: 625
+?                   -
+
++ 25 is less than 30and the square of 25 is: 625
+- 26 is less than 30 and the square of 26 is: 676
+?                   -
+
++ 26 is less than 30and the square of 26 is: 676
+- 27 is less than 30 and the square of 27 is: 729
+?                   -
+
++ 27 is less than 30and the square of 27 is: 729
+- 28 is less than 30 and the square of 28 is: 784
+?                   -
+
++ 28 is less than 30and the square of 28 is: 784
+- 29 is less than 30 and the square of 29 is: 841
+?                   -
+
++ 29 is less than 30and the square of 29 is: 841
+Case 5 of 5 score: 72.73381294964028 %
+
+---------------------------
+Case 1 of 5 score: 98.81422924901186 % 
+Case 2 of 5 score: 98.82352941176471 % 
+Case 3 of 5 score: 89.0909090909091 % 
+Case 4 of 5 score: 79.23497267759562 % 
+Case 5 of 5 score: 72.73381294964028 % 
+
+Your solution total score: 87.739 % 
+---------------------------
+

@@ -361,12 +361,11 @@ class judge42:
 
             # Expected outputs for this tests      
             expectedoutput = result['outputs'].splitlines()
-
-            # Run output for this test
+            
+            # Output for this test
             thisresult = result['output'].splitlines()
             
-
-            diffratio = difflib.SequenceMatcher(None, expectedoutput, thisresult)
+            diffratio = difflib.SequenceMatcher(None, result['outputs'],  result['output'])
             differences = difflib.ndiff(expectedoutput, thisresult)
 
             # Calculate ratio between expected outputs and run output for this test
@@ -377,6 +376,7 @@ class judge42:
                 failedcount += 1
                 if not relaxed:
                     ratio = 0.0
+                   
                 # If any msgfail was specified for this test
                 if result['msgfail'] != None:
                     report += result['msgfail'] + "\n"
@@ -512,7 +512,7 @@ if __name__ == '__main__':
     parser.add_argument("--python", help="full path to python binary, default value is use python from path variable", default='python', required=False)    
     args = parser.parse_args()
 
-   
+    print(args)
     j42 = judge42()
     
     # To capture CTRL+C signal
