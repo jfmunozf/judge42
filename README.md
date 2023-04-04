@@ -13,4 +13,4 @@ A simple judge mechanism to evaluate and autograde exams in a programming course
 
 ## Demo in Replit: loop
 
-- [click here]: (https://replit.com/@JuanFelipeFel49/judge42-demo?v=1)
+- [click here](https://replit.com/@JuanFelipeFel49/judge42-demo?v=1)
