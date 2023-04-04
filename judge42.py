@@ -512,7 +512,6 @@ if __name__ == '__main__':
     parser.add_argument("--python", help="full path to python binary, default value is use python from path variable", default='python', required=False)    
     args = parser.parse_args()
 
-    
     j42 = judge42()
     
     # To capture CTRL+C signal
