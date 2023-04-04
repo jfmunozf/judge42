@@ -1,3 +1,8 @@
+# A simple judge mechanism to evaluate and autograde exams in a programming course
+# Author: Juan Felipe Munoz Fernandez - jfmunozf.unal.edu.co
+# Version 1.0
+# Date: April 4, 2023
+
 from os.path import exists
 from os.path import getsize
 import sys, os
