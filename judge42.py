@@ -530,24 +530,39 @@ if __name__ == '__main__':
             print(f"Download database from URL: {args.url} ... FAILED")              
     
     if args.source != None:
-        exerciseid = j42.getexerciseId(args.source) 
-        iotests = j42.getInputOutputTests(exerciseid)
-        iotests = j42.parseIOTests(iotests)
-        testsresults = j42.judge(iotests, python_bin=args.python, sourcefile=args.source)
-        report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
-        j42.writeReport(report)
-        j42.writeScorePercentage()
-        print(report)
-        
+        try:
+            exerciseid = j42.getexerciseId(args.source) 
+            iotests = j42.getInputOutputTests(exerciseid)
+            iotests = j42.parseIOTests(iotests)
+            testsresults = j42.judge(iotests, python_bin=args.python, sourcefile=args.source)
+            report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
+            j42.writeReport(report)
+            j42.writeScorePercentage()
+            print(report)
+            sys.exit(0)
+        except Exception as err:
+            print(f"ERROR: {err}, {type(err)}") 
+                
     elif args.stdin and args.noloop:
-        print(j42.getInstructions())
-        j42.writeSourceFileFromStdInput()
+        try:
+            print(j42.getInstructions())
+            j42.writeSourceFileFromStdInput()
+            exerciseid = j42.getexerciseId()   
+            iotests = j42.getInputOutputTests(exerciseid)
+            iotests = j42.parseIOTests(iotests)
+            testsresults = j42.judge(iotests, python_bin=args.python, sourcefile='source.py')
+            report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
+            j42.writeReport(report)
+            j42.writeScorePercentage()
+            print(report)
+            sys.exit(0)
+        except Exception as err:
+            print(f"ERROR: {err}, {type(err)}") 
 
     elif args.stdin and args.loop:
         while True:
             print(j42.getInstructions())
             j42.writeSourceFileFromStdInput()
-            report = ""    
             try:
                 exerciseid = j42.getexerciseId()   
                 iotests = j42.getInputOutputTests(exerciseid)
