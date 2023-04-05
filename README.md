@@ -36,5 +36,4 @@ options:
                    option).
   --url URL        download database from specified URL
   --version        show version information
-
 ```
