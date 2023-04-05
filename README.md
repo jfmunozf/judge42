@@ -28,8 +28,7 @@ options:
   --noloop         don't loop when --stdin was specified
   --nofeedback     don't show differences between expected output and solution output
   --norelaxed      solution must produce exactly the expected results to full score. In relaxed option
-                   (default option) scores is calculated based on similiraty ratio between solution output
-                   and expected output.
+                   (default option) scores is calculated based on similiraty ratio between solution output and expected output.
   --python PYTHON  full path to python binary, default value is use python from path variable
   --source SOURCE  full path to source file as input instead of sys.stdin.
   --stdin          use stdin for input source. This is the default behavior executed in a loop (--loop
