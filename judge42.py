@@ -510,10 +510,7 @@ if __name__ == '__main__':
     group1.add_argument("--source", help="full path to source file as input instead of sys.stdin.", required=False)
     group1.add_argument("--stdin", help="use stdin for input source. This is the default behavior executed in a loop (--loop option).", default=True, required=False, action="store_true")
     parser.add_argument("--url", help="download database from specified URL", required=False)
-    parser.add_argument("--version", help="show version information", action="store_true", default=False, required=False)
-    
-    
-    
+    parser.add_argument("--version", help="show version information", action="store_true", default=False, required=False)    
     args = parser.parse_args()
 
     j42 = judge42()
