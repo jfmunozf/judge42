@@ -26,16 +26,14 @@ options:
   --dbfile DBFILE  path to a tests database (sqlite) file, if file not specified 'judge42.db' is used
   --loop           loop when --stdin was specified (default behavior)
   --noloop         don't loop when --stdin was specified
-  --feedback       show differences between expected output and solution output. Default behavior
-                   don't show differences between expected output and solution output
-  --relaxed        solution must produce exactly the expected results to full score, this is default
-                   behavior. In relaxed option scores is calculated based on similiraty ratio between
-                   solution output and expected output.
+  --feedback       show differences between expected output and solution output. Default behavior does not show
+                   differences between expected output and solution output
+  --relaxed        solution must produce exactly the expected results to full score, this is default behavior. In relaxed
+                   option, scores are calculated based on similiraty ratio between solution output and expected output.
   --python PYTHON  full path to python binary, default value is use python from path variable
-  --source SOURCE  full path to source file as input instead of sys.stdin. --noloop is used when source
-                   file is specified
-  --stdin          use stdin for input source. This is the default behavior executed in a loop (--loop
-                   option).
-  --url URL        download database from specified URL
+  --source SOURCE  full path to source file as input instead of sys.stdin. Option --noloop is atomatically used when
+                   source file is specified
+  --stdin          use stdin for input source code. This is the default behavior executed in a loop (--loop option).
+  --url URL        download tests database from specified URL
   --version        show version information
 ```
