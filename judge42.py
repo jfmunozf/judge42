@@ -5,13 +5,13 @@
 
 from os.path import exists
 from os.path import getsize
+from urllib import request
 import sys, os
 import difflib
 import re
 import sqlite3
 import subprocess
 import argparse
-import requests
 import signal
 
 # Some custom Exception classes
@@ -74,13 +74,10 @@ class judge42:
     def getDBFromURL(self, url, outputfilename="judge42.db"):
         retval = False
         try:
-            response = requests.get(url)
-            open(outputfilename, "wb").write(response.content)
+            
+            response = request.urlretrieve(url, outputfilename)
             if exists(outputfilename) and getsize(outputfilename) > 0:
-                retval = True                
-        except requests.exceptions.MissingSchema:
-            # Malformed URL
-            print("ERROR in getDBFromURL(): Invalid URL")
+                retval = True       
         except Exception as err:
             # Another error            
             raise Exception(f"ERROR in getDBFromURL(): {err}, {type(err)}")
@@ -500,12 +497,12 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     group1 = parser.add_mutually_exclusive_group()
-    group2 = parser.add_mutually_exclusive_group()
+    group2 = parser.add_mutually_exclusive_group()    
     parser.add_argument("--dbile", help="path to a tests database (sqlite) file, if not specified 'judg42.db' is used", default="judge42.db", required=False) 
     group2.add_argument("--loop", help="loop when --stdin was specified (default behavior)", action="store_true", default=True, required=False)
     group2.add_argument("--noloop", help="don't loop when --stdin was specified", action="store_true", default=False, required=False)
-    parser.add_argument("--nofeedback", help="don't show differences between expected output and solution output", action="store_false", default=True, required=False) 
-    parser.add_argument("--norelaxed", help="solution must produce exactly the expected results to full score. In relaxed option (default option) scores is calculated based on similiraty ratio between solution output and expected output.", action="store_false", default=True, required=False)
+    parser.add_argument("--feedback", help="show differences between expected output and solution output. Default behavior don't show differences between expected output and solution output", action="store_false", default=False, required=False) 
+    parser.add_argument("--relaxed", help="solution must produce exactly the expected results to full score, this is default behavior. In relaxed option scores is calculated based on similiraty ratio between solution output and expected output.", action="store_false", default=False, required=False)
     parser.add_argument("--python", help="full path to python binary, default value is use python from path variable", default='python', required=False)
     group1.add_argument("--source", help="full path to source file as input instead of sys.stdin.", required=False)
     group1.add_argument("--stdin", help="use stdin for input source. This is the default behavior executed in a loop (--loop option).", default=True, required=False, action="store_true")
@@ -535,7 +532,7 @@ if __name__ == '__main__':
             iotests = j42.getInputOutputTests(exerciseid, dbfile=args.dbfile)
             iotests = j42.parseIOTests(iotests)
             testsresults = j42.judge(iotests, python_bin=args.python, sourcefile=args.source)
-            report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
+            report = j42.getReport(testsresults, feedback=args.feedback, relaxed=args.relaxed)
             j42.writeReport(report)
             j42.writeScorePercentage()
             print(report)
@@ -551,7 +548,7 @@ if __name__ == '__main__':
             iotests = j42.getInputOutputTests(exerciseid, dbfile=args.dbfile)
             iotests = j42.parseIOTests(iotests)
             testsresults = j42.judge(iotests, python_bin=args.python, sourcefile='source.py')
-            report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
+            report = j42.getReport(testsresults, feedback=args.feedback, relaxed=args.relaxed)
             j42.writeReport(report)
             j42.writeScorePercentage()
             print(report)
@@ -568,7 +565,7 @@ if __name__ == '__main__':
                 iotests = j42.getInputOutputTests(exerciseid, dbfile=args.dbfile)
                 iotests = j42.parseIOTests(iotests)
                 testsresults = j42.judge(iotests, python_bin=args.python, sourcefile='source.py')
-                report = j42.getReport(testsresults, feedback=args.nofeedback, relaxed=args.norelaxed)
+                report = j42.getReport(testsresults, feedback=args.feedback, relaxed=args.relaxed)
                 j42.writeReport(report)
                 j42.writeScorePercentage()
                 print(report)
