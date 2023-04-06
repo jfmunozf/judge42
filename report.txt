@@ -4,309 +4,179 @@ A simple programming judge writen in Python
 Author: Juan Felipe Munoz Fernandez - jfmunozf@unal.edu.co
 -------------------
 
-Falla para el siguiente caso:
-1
-50
+Fail to this case:
+3
 *** Expected output ***
-3 es divisible por 3 o por 5
-5 es divisible por 3 o por 5
-6 es divisible por 3 o por 5
-9 es divisible por 3 o por 5
-10 es divisible por 3 o por 5
-12 es divisible por 3 o por 5
-15 es divisible por 3 o por 5
-18 es divisible por 3 o por 5
-20 es divisible por 3 o por 5
-21 es divisible por 3 o por 5
-24 es divisible por 3 o por 5
-25 es divisible por 3 o por 5
-27 es divisible por 3 o por 5
-30 es divisible por 3 o por 5
-33 es divisible por 3 o por 5
-35 es divisible por 3 o por 5
-36 es divisible por 3 o por 5
-39 es divisible por 3 o por 5
-40 es divisible por 3 o por 5
-42 es divisible por 3 o por 5
-45 es divisible por 3 o por 5
-48 es divisible por 3 o por 5
-50 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 13
-Cantidad de numeros divisibles solo por 5 es: 7
-Cantidad de numeros divisibles por 3 o por 5 es: 23
-Sumatoria de numeros entre 1 y 50 que no son divisibles por 3 o por 5 es: 682
+0 is less than 3 and the square of 0 is: 0
+1 is less than 3 and the square of 1 is: 1
+2 is less than 3 and the square of 2 is: 4
 *** Your output ***
-3 es divisible por 3 o por 5
-5 es divisible por 3 o por 5
-6 es divisible por 3 o por 5
-9 es divisible por 3 o por 5
-10 es divisible por 3 o por 5
-12 es divisible por 3 o por 5
-15 es divisible por 3 o por 5
-18 es divisible por 3 o por 5
-20 es divisible por 3 o por 5
-21 es divisible por 3 o por 5
-24 es divisible por 3 o por 5
-25 es divisible por 3 o por 5
-27 es divisible por 3 o por 5
-30 es divisible por 3 o por 5
-33 es divisible por 3 o por 5
-35 es divisible por 3 o por 5
-36 es divisible por 3 o por 5
-39 es divisible por 3 o por 5
-40 es divisible por 3 o por 5
-42 es divisible por 3 o por 5
-45 es divisible por 3 o por 5
-48 es divisible por 3 o por 5
-50 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 13
-Cantidad de numeros divisibles solo por 5 es: 7
-Cantidad de numeros divisibles por 3 o por 5 es: 23
-Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 682
-*** Differences ***
-  3 es divisible por 3 o por 5
-  5 es divisible por 3 o por 5
-  6 es divisible por 3 o por 5
-  9 es divisible por 3 o por 5
-  10 es divisible por 3 o por 5
-  12 es divisible por 3 o por 5
-  15 es divisible por 3 o por 5
-  18 es divisible por 3 o por 5
-  20 es divisible por 3 o por 5
-  21 es divisible por 3 o por 5
-  24 es divisible por 3 o por 5
-  25 es divisible por 3 o por 5
-  27 es divisible por 3 o por 5
-  30 es divisible por 3 o por 5
-  33 es divisible por 3 o por 5
-  35 es divisible por 3 o por 5
-  36 es divisible por 3 o por 5
-  39 es divisible por 3 o por 5
-  40 es divisible por 3 o por 5
-  42 es divisible por 3 o por 5
-  45 es divisible por 3 o por 5
-  48 es divisible por 3 o por 5
-  50 es divisible por 3 o por 5
-  Cantidad de numeros divisibles solo por 3 es: 13
-  Cantidad de numeros divisibles solo por 5 es: 7
-  Cantidad de numeros divisibles por 3 o por 5 es: 23
-- Sumatoria de numeros entre 1 y 50 que no son divisibles por 3 o por 5 es: 682
-?                            ^   ^^
+0 is less than3 and the square of 0 is: 0
+1 is less than3 and the square of 1 is: 1
+2 is less than3 and the square of 2 is: 4
+Case 1 of 5 score: 0.0 %
 
-+ Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 682
-?                            ^   ^
+Fail to this case:
+5
+*** Expected output ***
+0 is less than 5 and the square of 0 is: 0
+1 is less than 5 and the square of 1 is: 1
+2 is less than 5 and the square of 2 is: 4
+3 is less than 5 and the square of 3 is: 9
+4 is less than 5 and the square of 4 is: 16
+*** Your output ***
+0 is less than5 and the square of 0 is: 0
+1 is less than5 and the square of 1 is: 1
+2 is less than5 and the square of 2 is: 4
+3 is less than5 and the square of 3 is: 9
+4 is less than5 and the square of 4 is: 16
+Case 2 of 5 score: 0.0 %
 
-Case 1 of 5 score: 99.72572682391662 %
-
-Falla para el siguiente caso:
--10
+Fail to this case:
 10
 *** Expected output ***
--10 es divisible por 3 o por 5
--9 es divisible por 3 o por 5
--6 es divisible por 3 o por 5
--5 es divisible por 3 o por 5
--3 es divisible por 3 o por 5
-0 es divisible por 3 o por 5
-3 es divisible por 3 o por 5
-5 es divisible por 3 o por 5
-6 es divisible por 3 o por 5
-9 es divisible por 3 o por 5
-10 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 6
-Cantidad de numeros divisibles solo por 5 es: 4
-Cantidad de numeros divisibles por 3 o por 5 es: 11
-Sumatoria de numeros entre -10 y 10 que no son divisibles por 3 o por 5 es: 0
+0 is less than 10 and the square of 0 is: 0
+1 is less than 10 and the square of 1 is: 1
+2 is less than 10 and the square of 2 is: 4
+3 is less than 10 and the square of 3 is: 9
+4 is less than 10 and the square of 4 is: 16
+5 is less than 10 and the square of 5 is: 25
+6 is less than 10 and the square of 6 is: 36
+7 is less than 10 and the square of 7 is: 49
+8 is less than 10 and the square of 8 is: 64
+9 is less than 10 and the square of 9 is: 81
 *** Your output ***
--10 es divisible por 3 o por 5
--9 es divisible por 3 o por 5
--6 es divisible por 3 o por 5
--5 es divisible por 3 o por 5
--3 es divisible por 3 o por 5
-0 es divisible por 3 o por 5
-3 es divisible por 3 o por 5
-5 es divisible por 3 o por 5
-6 es divisible por 3 o por 5
-9 es divisible por 3 o por 5
-10 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 6
-Cantidad de numeros divisibles solo por 5 es: 4
-Cantidad de numeros divisibles por 3 o por 5 es: 11
-Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 0
-*** Differences ***
-  -10 es divisible por 3 o por 5
-  -9 es divisible por 3 o por 5
-  -6 es divisible por 3 o por 5
-  -5 es divisible por 3 o por 5
-  -3 es divisible por 3 o por 5
-  0 es divisible por 3 o por 5
-  3 es divisible por 3 o por 5
-  5 es divisible por 3 o por 5
-  6 es divisible por 3 o por 5
-  9 es divisible por 3 o por 5
-  10 es divisible por 3 o por 5
-  Cantidad de numeros divisibles solo por 3 es: 6
-  Cantidad de numeros divisibles solo por 5 es: 4
-  Cantidad de numeros divisibles por 3 o por 5 es: 11
-- Sumatoria de numeros entre -10 y 10 que no son divisibles por 3 o por 5 es: 0
-?                            ^^^   ^^
+0 is less than10 and the square of 0 is: 0
+1 is less than10 and the square of 1 is: 1
+2 is less than10 and the square of 2 is: 4
+3 is less than10 and the square of 3 is: 9
+4 is less than10 and the square of 4 is: 16
+5 is less than10 and the square of 5 is: 25
+6 is less than10 and the square of 6 is: 36
+7 is less than10 and the square of 7 is: 49
+8 is less than10 and the square of 8 is: 64
+9 is less than10 and the square of 9 is: 81
+Case 3 of 5 score: 0.0 %
 
-+ Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 0
-?                            ^   ^
-
-Case 2 of 5 score: 99.36305732484077 %
-
-Falla para el siguiente caso:
--15
--1
-*** Expected output ***
--15 es divisible por 3 o por 5
--12 es divisible por 3 o por 5
--10 es divisible por 3 o por 5
--9 es divisible por 3 o por 5
--6 es divisible por 3 o por 5
--5 es divisible por 3 o por 5
--3 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 4
-Cantidad de numeros divisibles solo por 5 es: 2
-Cantidad de numeros divisibles por 3 o por 5 es: 7
-Sumatoria de numeros entre -15 y -1 que no son divisibles por 3 o por 5 es: -60
-*** Your output ***
--15 es divisible por 3 o por 5
--12 es divisible por 3 o por 5
--10 es divisible por 3 o por 5
--9 es divisible por 3 o por 5
--6 es divisible por 3 o por 5
--5 es divisible por 3 o por 5
--3 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 4
-Cantidad de numeros divisibles solo por 5 es: 2
-Cantidad de numeros divisibles por 3 o por 5 es: 7
-Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: -60
-*** Differences ***
-  -15 es divisible por 3 o por 5
-  -12 es divisible por 3 o por 5
-  -10 es divisible por 3 o por 5
-  -9 es divisible por 3 o por 5
-  -6 es divisible por 3 o por 5
-  -5 es divisible por 3 o por 5
-  -3 es divisible por 3 o por 5
-  Cantidad de numeros divisibles solo por 3 es: 4
-  Cantidad de numeros divisibles solo por 5 es: 2
-  Cantidad de numeros divisibles por 3 o por 5 es: 7
-- Sumatoria de numeros entre -15 y -1 que no son divisibles por 3 o por 5 es: -60
-?                            ^^^   ^^
-
-+ Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: -60
-?                            ^   ^
-
-Case 3 of 5 score: 99.2 %
-
-Falla para el siguiente caso:
+Fail to this case:
 20
-50
 *** Expected output ***
-20 es divisible por 3 o por 5
-21 es divisible por 3 o por 5
-24 es divisible por 3 o por 5
-25 es divisible por 3 o por 5
-27 es divisible por 3 o por 5
-30 es divisible por 3 o por 5
-33 es divisible por 3 o por 5
-35 es divisible por 3 o por 5
-36 es divisible por 3 o por 5
-39 es divisible por 3 o por 5
-40 es divisible por 3 o por 5
-42 es divisible por 3 o por 5
-45 es divisible por 3 o por 5
-48 es divisible por 3 o por 5
-50 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 8
-Cantidad de numeros divisibles solo por 5 es: 5
-Cantidad de numeros divisibles por 3 o por 5 es: 15
-Sumatoria de numeros entre 20 y 50 que no son divisibles por 3 o por 5 es: 570
+0 is less than 20 and the square of 0 is: 0
+1 is less than 20 and the square of 1 is: 1
+2 is less than 20 and the square of 2 is: 4
+3 is less than 20 and the square of 3 is: 9
+4 is less than 20 and the square of 4 is: 16
+5 is less than 20 and the square of 5 is: 25
+6 is less than 20 and the square of 6 is: 36
+7 is less than 20 and the square of 7 is: 49
+8 is less than 20 and the square of 8 is: 64
+9 is less than 20 and the square of 9 is: 81
+10 is less than 20 and the square of 10 is: 100
+11 is less than 20 and the square of 11 is: 121
+12 is less than 20 and the square of 12 is: 144
+13 is less than 20 and the square of 13 is: 169
+14 is less than 20 and the square of 14 is: 196
+15 is less than 20 and the square of 15 is: 225
+16 is less than 20 and the square of 16 is: 256
+17 is less than 20 and the square of 17 is: 289
+18 is less than 20 and the square of 18 is: 324
+19 is less than 20 and the square of 19 is: 361
 *** Your output ***
-20 es divisible por 3 o por 5
-21 es divisible por 3 o por 5
-24 es divisible por 3 o por 5
-25 es divisible por 3 o por 5
-27 es divisible por 3 o por 5
-30 es divisible por 3 o por 5
-33 es divisible por 3 o por 5
-35 es divisible por 3 o por 5
-36 es divisible por 3 o por 5
-39 es divisible por 3 o por 5
-40 es divisible por 3 o por 5
-42 es divisible por 3 o por 5
-45 es divisible por 3 o por 5
-48 es divisible por 3 o por 5
-50 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 8
-Cantidad de numeros divisibles solo por 5 es: 5
-Cantidad de numeros divisibles por 3 o por 5 es: 15
-Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 570
-*** Differences ***
-  20 es divisible por 3 o por 5
-  21 es divisible por 3 o por 5
-  24 es divisible por 3 o por 5
-  25 es divisible por 3 o por 5
-  27 es divisible por 3 o por 5
-  30 es divisible por 3 o por 5
-  33 es divisible por 3 o por 5
-  35 es divisible por 3 o por 5
-  36 es divisible por 3 o por 5
-  39 es divisible por 3 o por 5
-  40 es divisible por 3 o por 5
-  42 es divisible por 3 o por 5
-  45 es divisible por 3 o por 5
-  48 es divisible por 3 o por 5
-  50 es divisible por 3 o por 5
-  Cantidad de numeros divisibles solo por 3 es: 8
-  Cantidad de numeros divisibles solo por 5 es: 5
-  Cantidad de numeros divisibles por 3 o por 5 es: 15
-- Sumatoria de numeros entre 20 y 50 que no son divisibles por 3 o por 5 es: 570
-?                            ^^   ^^
+0 is less than20 and the square of 0 is: 0
+1 is less than20 and the square of 1 is: 1
+2 is less than20 and the square of 2 is: 4
+3 is less than20 and the square of 3 is: 9
+4 is less than20 and the square of 4 is: 16
+5 is less than20 and the square of 5 is: 25
+6 is less than20 and the square of 6 is: 36
+7 is less than20 and the square of 7 is: 49
+8 is less than20 and the square of 8 is: 64
+9 is less than20 and the square of 9 is: 81
+10 is less than20 and the square of 10 is: 100
+11 is less than20 and the square of 11 is: 121
+12 is less than20 and the square of 12 is: 144
+13 is less than20 and the square of 13 is: 169
+14 is less than20 and the square of 14 is: 196
+15 is less than20 and the square of 15 is: 225
+16 is less than20 and the square of 16 is: 256
+17 is less than20 and the square of 17 is: 289
+18 is less than20 and the square of 18 is: 324
+19 is less than20 and the square of 19 is: 361
+Case 4 of 5 score: 0.0 %
 
-+ Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 570
-?                            ^   ^
-
-Case 4 of 5 score: 99.55555555555556 %
-
-Falla para el siguiente caso:
-0
-1
+Fail to this case:
+30
 *** Expected output ***
-0 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 0
-Cantidad de numeros divisibles solo por 5 es: 0
-Cantidad de numeros divisibles por 3 o por 5 es: 1
-Sumatoria de numeros entre 0 y 1 que no son divisibles por 3 o por 5 es: 1
+0 is less than 30 and the square of 0 is: 0
+1 is less than 30 and the square of 1 is: 1
+2 is less than 30 and the square of 2 is: 4
+3 is less than 30 and the square of 3 is: 9
+4 is less than 30 and the square of 4 is: 16
+5 is less than 30 and the square of 5 is: 25
+6 is less than 30 and the square of 6 is: 36
+7 is less than 30 and the square of 7 is: 49
+8 is less than 30 and the square of 8 is: 64
+9 is less than 30 and the square of 9 is: 81
+10 is less than 30 and the square of 10 is: 100
+11 is less than 30 and the square of 11 is: 121
+12 is less than 30 and the square of 12 is: 144
+13 is less than 30 and the square of 13 is: 169
+14 is less than 30 and the square of 14 is: 196
+15 is less than 30 and the square of 15 is: 225
+16 is less than 30 and the square of 16 is: 256
+17 is less than 30 and the square of 17 is: 289
+18 is less than 30 and the square of 18 is: 324
+19 is less than 30 and the square of 19 is: 361
+20 is less than 30 and the square of 20 is: 400
+21 is less than 30 and the square of 21 is: 441
+22 is less than 30 and the square of 22 is: 484
+23 is less than 30 and the square of 23 is: 529
+24 is less than 30 and the square of 24 is: 576
+25 is less than 30 and the square of 25 is: 625
+26 is less than 30 and the square of 26 is: 676
+27 is less than 30 and the square of 27 is: 729
+28 is less than 30 and the square of 28 is: 784
+29 is less than 30 and the square of 29 is: 841
 *** Your output ***
-0 es divisible por 3 o por 5
-Cantidad de numeros divisibles solo por 3 es: 0
-Cantidad de numeros divisibles solo por 5 es: 0
-Cantidad de numeros divisibles por 3 o por 5 es: 1
-Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 1
-*** Differences ***
-  0 es divisible por 3 o por 5
-  Cantidad de numeros divisibles solo por 3 es: 0
-  Cantidad de numeros divisibles solo por 5 es: 0
-  Cantidad de numeros divisibles por 3 o por 5 es: 1
-- Sumatoria de numeros entre 0 y 1 que no son divisibles por 3 o por 5 es: 1
-?                            ^   ^
-
-+ Sumatoria de numeros entre A y B que no son divisibles por 3 o por 5 es: 1
-?                            ^   ^
-
-Case 5 of 5 score: 82.8 %
+0 is less than30 and the square of 0 is: 0
+1 is less than30 and the square of 1 is: 1
+2 is less than30 and the square of 2 is: 4
+3 is less than30 and the square of 3 is: 9
+4 is less than30 and the square of 4 is: 16
+5 is less than30 and the square of 5 is: 25
+6 is less than30 and the square of 6 is: 36
+7 is less than30 and the square of 7 is: 49
+8 is less than30 and the square of 8 is: 64
+9 is less than30 and the square of 9 is: 81
+10 is less than30 and the square of 10 is: 100
+11 is less than30 and the square of 11 is: 121
+12 is less than30 and the square of 12 is: 144
+13 is less than30 and the square of 13 is: 169
+14 is less than30 and the square of 14 is: 196
+15 is less than30 and the square of 15 is: 225
+16 is less than30 and the square of 16 is: 256
+17 is less than30 and the square of 17 is: 289
+18 is less than30 and the square of 18 is: 324
+19 is less than30 and the square of 19 is: 361
+20 is less than30 and the square of 20 is: 400
+21 is less than30 and the square of 21 is: 441
+22 is less than30 and the square of 22 is: 484
+23 is less than30 and the square of 23 is: 529
+24 is less than30 and the square of 24 is: 576
+25 is less than30 and the square of 25 is: 625
+26 is less than30 and the square of 26 is: 676
+27 is less than30 and the square of 27 is: 729
+28 is less than30 and the square of 28 is: 784
+29 is less than30 and the square of 29 is: 841
+Case 5 of 5 score: 0.0 %
 
 ---------------------------
-Case 1 of 5 score: 99.72572682391662 % 
-Case 2 of 5 score: 99.36305732484077 % 
-Case 3 of 5 score: 99.2 % 
-Case 4 of 5 score: 99.55555555555556 % 
-Case 5 of 5 score: 82.8 % 
+Case 1 of 5 score: 0.0 % 
+Case 2 of 5 score: 0.0 % 
+Case 3 of 5 score: 0.0 % 
+Case 4 of 5 score: 0.0 % 
+Case 5 of 5 score: 0.0 % 
 
-Your solution total score: 96.129 % 
+Your solution total score: 0.0 % 
 ---------------------------
 

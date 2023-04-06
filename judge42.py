@@ -498,7 +498,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     group1 = parser.add_mutually_exclusive_group()
     group2 = parser.add_mutually_exclusive_group()    
-    parser.add_argument("--dbile", help="path to a tests database (sqlite) file, if not specified 'judg42.db' is used", default="judge42.db", required=False) 
+    parser.add_argument("--dbfile", help="path to a tests database (sqlite) file, if not specified 'judg42.db' is used", default="judge42.db", required=False) 
     group2.add_argument("--loop", help="loop when --stdin was specified (default behavior)", action="store_true", default=True, required=False)
     group2.add_argument("--noloop", help="don't loop when --stdin was specified", action="store_true", default=False, required=False)
     parser.add_argument("--feedback", help="show differences between expected output and solution output. Default behavior don't show differences between expected output and solution output", action="store_false", default=False, required=False) 
@@ -509,7 +509,7 @@ if __name__ == '__main__':
     parser.add_argument("--url", help="download database from specified URL", required=False)
     parser.add_argument("--version", help="show version information", action="store_true", default=False, required=False)    
     args = parser.parse_args()
-
+    print(args)
     j42 = judge42()
     
     # To capture CTRL+C signal
