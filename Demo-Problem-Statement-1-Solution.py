@@ -2,4 +2,4 @@
 
 N = int(input())
 for i in range(N):
-    print(f"{i} is less than{N}and the square of {i} is: {i**2}")
+    print(f"{i} is less than{N} and the square of {i} is: {i**2}")
