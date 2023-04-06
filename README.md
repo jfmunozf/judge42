@@ -23,7 +23,7 @@ usage: judge42.py [-h] [--dbile DBILE] [--loop | --noloop] [--feedback] [--relax
 
 options:
   -h, --help       show this help message and exit
-  --dbile DBILE    path to a tests database (sqlite) file, if not specified 'judg42.db' is used
+  --dbfile DBILE   path to a tests database (sqlite) file, if not specified 'judge42.db' is used
   --loop           loop when --stdin was specified (default behavior)
   --noloop         don't loop when --stdin was specified
   --feedback       show differences between expected output and solution output. Default behavior don't show differences between expected output and solution output
