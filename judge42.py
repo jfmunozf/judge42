@@ -551,8 +551,7 @@ if __name__ == '__main__':
             report = j42.getReport(testsresults, feedback=args.feedback, relaxed=args.relaxed)
             j42.writeReport(report)
             j42.writeScorePercentage()
-            print(report)
-            input("\n --> Press [ENTER] to continue")
+            print(report)            
             sys.exit(0)
         except Exception as err:
             print(f"ERROR: {err}, {type(err)}") 
