@@ -478,7 +478,7 @@ class judge42:
             eofkey = "CTRL+Z"
         retval += "--> Copy and paste your code below: right click and paste\n"
         retval += "--> first line of code must include id of your exercise\n"
-        retval += "--> hit ENTER + " + eofkey + " to check your code\n"
+        retval += "--> hit [ENTER] + " + eofkey + " to check your code\n"
         retval += "--> press CTRL+C to terminate this program\n\n"        
         
         return retval
@@ -552,6 +552,7 @@ if __name__ == '__main__':
             j42.writeReport(report)
             j42.writeScorePercentage()
             print(report)
+            input("\n --> Press [ENTER] to continue")
             sys.exit(0)
         except Exception as err:
             print(f"ERROR: {err}, {type(err)}") 
