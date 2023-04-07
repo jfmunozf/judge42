@@ -569,7 +569,7 @@ if __name__ == '__main__':
                 j42.writeReport(report)
                 j42.writeScorePercentage()
                 print(report)
-                input("\n --> Press [ENTER] to continue")
+                input("--> Press [ENTER] to continue <--")
             except Exception as err:
                 print(f"ERROR: {err}, {type(err)}")            
         sys.exit(0)
