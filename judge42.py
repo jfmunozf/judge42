@@ -502,7 +502,7 @@ if __name__ == '__main__':
     group2.add_argument("--loop", help="loop when --stdin was specified (default behavior)", action="store_true", default=True, required=False)
     group2.add_argument("--noloop", help="don't loop when --stdin was specified", action="store_true", default=False, required=False)
     parser.add_argument("--feedback", help="show differences between expected output and solution output. Default behavior does not show differences between expected output and solution output", action="store_true", default=False, required=False) 
-    parser.add_argument("--relaxed", help="solution must produce exactly the expected results to full score, this is default behavior. In relaxed option, scores are calculated based on similiraty ratio between solution output and expected output.", action="store_true", default=False, required=False)
+    parser.add_argument("--relaxed", help="solution must produce exactly the expected results to full score, this is default behavior. In relaxed option, scores are calculated based on similarity ratio between solution output and expected output.", action="store_true", default=False, required=False)
     parser.add_argument("--python", help="full path to python binary, default value is use python from path variable", default='python', required=False)
     group1.add_argument("--source", help="full path to source file as input instead of sys.stdin. Option --noloop is atomatically used when source file is specified", required=False)
     group1.add_argument("--stdin", help="use stdin for input source code. This is the default behavior executed in a loop (--loop option).", default=True, required=False, action="store_true")
