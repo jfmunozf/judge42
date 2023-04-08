@@ -15,6 +15,10 @@ A simple judge mechanism to evaluate and autograde exams in a programming course
 
 - [Click here](https://replit.com/@JuanFelipeFel49/judge42-demo?v=1)
 
+## Demo in Replit using a simple web app with Flask:
+
+- [Click here](https://replit.com/@JuanFelipeFel49/judge42-flask?v=1)
+
 ## Usage:
 
 ```
