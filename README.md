@@ -19,7 +19,7 @@ A simple judge mechanism to evaluate and autograde exams in a programming course
 
 - [Click here](https://replit.com/@JuanFelipeFel49/judge42-flask?v=1)
 
-## Usage in command line arguments:
+## Usage in command line:
 
 ```
 usage: judge42.py [-h] [--dbfile DBFILE] [--loop | --noloop] [--feedback]
