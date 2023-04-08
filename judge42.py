@@ -338,7 +338,7 @@ class judge42:
     #          general score for a soltion is arithmetic mean of similarity ratio. When False, }
     #          general score for a solution must pass every test with 100% match betweed run 
     #          output and expected output.
-    def getReport(self, testsresults, feedback=True, relaxed=True):
+    def getReport(self, testsresults, feedback=False, relaxed=False):
 
         if len(testsresults) == 0:
             # Our custom exception class
@@ -399,8 +399,8 @@ class judge42:
                     report += result['msgpass'] +"\n"
             
             # This test ratio
-            casereport += f"Case {testcount} of {result['numtests']} score: {ratio} % \n"
-            report += f"Case {testcount} of {result['numtests']} score: {ratio} %" + "\n\n"           
+            casereport += f"--> Case {testcount} of {result['numtests']} score: {ratio} % \n"
+            report += f"--> Case {testcount} of {result['numtests']} score: {ratio} %" + "\n\n"           
             
             testcount += 1
             acumulatedratio += ratio
