@@ -19,6 +19,10 @@ A simple judge mechanism to evaluate and autograde exams in a programming course
 
 - [Click here](https://replit.com/@JuanFelipeFel49/judge42-flask?v=1)
 
+## Demo in Python anywhere: simple web app with Flask
+
+- [Click here](https://jfmunozf.pythonanywhere.com/)
+
 ## Usage in command line:
 
 ```
