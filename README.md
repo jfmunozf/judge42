@@ -4,7 +4,7 @@ A simple judge mechanism to evaluate and autograde exams in a [Python] programmi
 
 ## Tutorial on How to create your own tests cases for Jude42:
 
-[clic here](https://drive.google.com/file/d/1YEJcvnK_aQVuRI3kZmgRip9fTEelRofY/view?usp=drivesdk)
+[Click here](https://drive.google.com/file/d/1YEJcvnK_aQVuRI3kZmgRip9fTEelRofY/view?usp=drivesdk)
 
 ## Problems statements to use in demos:
 
