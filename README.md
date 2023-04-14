@@ -2,7 +2,7 @@
 
 A simple judge mechanism to evaluate and autograde exams in a [Python] programming course
 
-## Tutorial on How to create your own tests cases for Jude42:
+## Tutorial on How to create your own tests cases for Judge42:
 
 [Click here](https://drive.google.com/file/d/1YEJcvnK_aQVuRI3kZmgRip9fTEelRofY/view?usp=drivesdk)
 
