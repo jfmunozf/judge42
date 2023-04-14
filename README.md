@@ -1,8 +1,12 @@
 # judge42
 
-A simple judge mechanism to evaluate and autograde exams in a programming course
+A simple judge mechanism to evaluate and autograde exams in a [Python] programming course
 
-## Poblems statements to use in demos:
+## Tutorial on How to create your own tests cases for Jude42:
+
+[clic here](https://drive.google.com/file/d/1YEJcvnK_aQVuRI3kZmgRip9fTEelRofY/view?usp=drivesdk)
+
+## Problems statements to use in demos:
 
 - Demo problem statement 1: [click here](https://drive.google.com/file/d/1MAAfQFjSs70xd4EeNb0hSpTXa8EJReGD/view?usp=drivesdk)
 - Demo problem statement 2: [click here](https://drive.google.com/file/d/1DDrM8AAZQ9W5ovhTYG8P4pdhj-UwojdN/view?usp=drivesdk)
