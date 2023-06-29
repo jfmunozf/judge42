@@ -229,7 +229,7 @@ class judge42:
             # Obtain inputs and outputs specified in a test
             strinputs = test['inputs']
             stroutputs = test['outputs']
-
+            result = None
             try:
                 
                 # Run Python interpreter on a source file
@@ -320,7 +320,7 @@ class judge42:
                 testresult['msgpass'] = None
                 testresult['showout'] = False
                 testresult['numtests'] = totaltests
-                testresult['output'] = result.stderr.decode()
+                testresult['output'] = "Timeout Expired: your solution exceed running time"
                 testsresults.append(testresult)
                 return testsresults
             except Exception as err:
